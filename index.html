@@ -4,140 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>e-ScanToWord | Free 1 Month Pro</title>
-  <meta name="description" content="Install e-ScanToWord and redeem a free 1 month Pro promo code. Scan documents, handwriting, images and PDFs into editable Word or PDF." />
+  <meta name="description" content="Install e-ScanToWord and claim a free 1 month Pro Google Play promo code." />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: linear-gradient(135deg, #0b5ed7, #071b3a);
       color: #111827;
       min-height: 100vh;
-      padding: 24px;
+      padding: 22px;
     }
-
-    .page {
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .hero {
-      background: #ffffff;
+    .page { max-width: 980px; margin: 0 auto; }
+    .hero, .section {
+      background: #fff;
       border-radius: 24px;
-      padding: 34px;
-      box-shadow: 0 22px 60px rgba(0,0,0,0.25);
-      overflow: hidden;
+      padding: 30px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.22);
+      margin-bottom: 20px;
     }
-
     .badge {
       display: inline-block;
       background: #eaf2ff;
       color: #0b5ed7;
-      font-weight: 700;
+      font-weight: 800;
       padding: 8px 14px;
       border-radius: 999px;
       font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      font-size: clamp(32px, 6vw, 56px);
-      line-height: 1.05;
-      color: #071b3a;
       margin-bottom: 16px;
     }
-
-    .lead {
-      font-size: 19px;
-      line-height: 1.65;
-      color: #374151;
-      max-width: 780px;
-      margin-bottom: 24px;
+    h1 {
+      font-size: clamp(30px, 6vw, 54px);
+      line-height: 1.05;
+      color: #071b3a;
+      margin-bottom: 14px;
     }
-
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin: 24px 0;
-    }
-
+    h2 { color: #071b3a; font-size: 28px; margin-bottom: 12px; }
+    p { line-height: 1.6; color: #374151; }
+    .lead { font-size: 19px; max-width: 760px; margin-bottom: 22px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0; }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      border: 0;
+      cursor: pointer;
       text-decoration: none;
       font-weight: 800;
       padding: 14px 20px;
       border-radius: 14px;
-      transition: transform 0.15s ease, opacity 0.15s ease;
+      transition: .15s ease;
+      font-size: 15px;
     }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      opacity: 0.94;
-    }
-
-    .btn-primary {
-      background: #0b5ed7;
-      color: #ffffff;
-    }
-
-    .btn-secondary {
-      background: #111827;
-      color: #ffffff;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-top: 26px;
-    }
-
+    .btn:hover { transform: translateY(-1px); opacity: .94; }
+    .btn-primary { background: #0b5ed7; color: #fff; }
+    .btn-dark { background: #111827; color: #fff; }
+    .btn-green { background: #16a34a; color: #fff; }
+    .btn-copy { background: #071b3a; color: #fff; width: 100%; margin-top: 10px; }
+    .btn-used { background: #9ca3af; color: #fff; width: 100%; margin-top: 10px; }
+    .grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 24px; }
     .card {
       background: #f8fafc;
       border: 1px solid #e5e7eb;
       border-radius: 18px;
       padding: 18px;
     }
-
-    .card h3 {
-      color: #071b3a;
-      margin-bottom: 8px;
-      font-size: 17px;
-    }
-
-    .card p {
-      color: #4b5563;
-      line-height: 1.5;
-      font-size: 14px;
-    }
-
-    .section {
-      background: #ffffff;
-      border-radius: 24px;
-      padding: 28px;
-      margin-top: 20px;
-      box-shadow: 0 14px 40px rgba(0,0,0,0.16);
-    }
-
-    .section h2 {
-      color: #071b3a;
-      font-size: 28px;
-      margin-bottom: 12px;
-    }
-
-    .steps {
-      display: grid;
-      gap: 12px;
-      margin-top: 16px;
-    }
-
+    .card h3 { color: #071b3a; margin-bottom: 8px; font-size: 17px; }
+    .card p { font-size: 14px; color: #4b5563; }
+    .steps { display: grid; gap: 12px; margin-top: 14px; }
     .step {
       display: flex;
       gap: 12px;
@@ -145,74 +78,85 @@
       border: 1px solid #e5e7eb;
       padding: 14px;
       border-radius: 16px;
-      align-items: flex-start;
     }
-
     .num {
       flex: 0 0 32px;
       height: 32px;
       border-radius: 50%;
       background: #0b5ed7;
-      color: #ffffff;
+      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
+      font-weight: 900;
     }
-
     .codes {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 12px;
       margin-top: 18px;
     }
-
+    .code-card {
+      border: 1px solid #dbeafe;
+      background: #f8fafc;
+      border-radius: 18px;
+      padding: 14px;
+    }
+    .code-label { font-size: 12px; color: #64748b; margin-bottom: 6px; }
     .code {
       background: #071b3a;
-      color: #ffffff;
-      border-radius: 14px;
-      padding: 14px;
-      font-weight: 800;
+      color: #fff;
+      border-radius: 12px;
+      padding: 13px;
+      font-weight: 900;
       letter-spacing: 1px;
       text-align: center;
       user-select: all;
       border: 2px dashed #93c5fd;
+      word-break: break-word;
     }
-
-    .note {
+    .claimed .code { background: #9ca3af; border-color: #d1d5db; }
+    .claimed .code-label::after { content: " • Claimed on this device"; color: #16a34a; font-weight: 800; }
+    .notice {
       margin-top: 16px;
       padding: 14px;
       border-radius: 14px;
       background: #fff7ed;
       color: #9a3412;
       line-height: 1.5;
-      font-weight: 600;
+      font-weight: 700;
     }
-
-    .footer {
-      text-align: center;
-      color: #dbeafe;
-      margin: 22px 0 4px;
-      font-size: 14px;
+    .trust {
+      margin-top: 12px;
+      color: #166534;
+      font-weight: 800;
+      background: #ecfdf5;
+      border: 1px solid #bbf7d0;
+      padding: 12px;
+      border-radius: 14px;
     }
-
+    .footer { text-align: center; color: #dbeafe; margin: 24px 0 4px; font-size: 14px; }
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      background: #111827;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.25);
+      opacity: 0;
+      pointer-events: none;
+      transition: .2s ease;
+      z-index: 99;
+    }
+    .toast.show { opacity: 1; }
     @media (max-width: 760px) {
-      body {
-        padding: 14px;
-      }
-
-      .hero, .section {
-        padding: 22px;
-        border-radius: 20px;
-      }
-
-      .grid, .codes {
-        grid-template-columns: 1fr;
-      }
-
-      .btn {
-        width: 100%;
-      }
+      body { padding: 14px; }
+      .hero, .section { padding: 22px; border-radius: 20px; }
+      .grid, .codes { grid-template-columns: 1fr; }
+      .btn { width: 100%; }
     }
   </style>
 </head>
@@ -221,133 +165,112 @@
     <section class="hero">
       <span class="badge">🎁 Free 1 Month Pro Promo</span>
       <h1>Scan documents into editable Word instantly.</h1>
-      <p class="lead">
-        Install e-ScanToWord and use an official Google Play promo code to unlock 1 month of Pro access. Scan printed documents, handwriting, images and PDFs into editable Word or PDF.
-      </p>
-
+      <p class="lead">Install e-ScanToWord and claim an official Google Play promo code to unlock 1 month of Pro access.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.sanie.escantoword" target="_blank" rel="noopener">Install Now</a>
-        <a class="btn btn-secondary" href="https://play.google.com/redeem" target="_blank" rel="noopener">Redeem Code</a>
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.sanie.escantoword&hl=en" target="_blank" rel="noopener">📲 Install / Open App</a>
+        <a class="btn btn-dark" href="https://play.google.com/redeem" target="_blank" rel="noopener">🎁 Redeem Code</a>
       </div>
-
+      <div class="trust">✔ Official Google Play promo codes<br />✔ No payment required for promo redemption</div>
       <div class="grid">
-        <div class="card">
-          <h3>📄 Scan to Word</h3>
-          <p>Convert documents into editable Word files without typing manually.</p>
-        </div>
-        <div class="card">
-          <h3>✍️ Handwriting Support</h3>
-          <p>Use Pro features for better handwriting and document formatting.</p>
-        </div>
-        <div class="card">
-          <h3>📎 PDF Export</h3>
-          <p>Save or share scanned results as Word or PDF files quickly.</p>
-        </div>
+        <div class="card"><h3>📄 Scan to Word</h3><p>Convert documents into editable Word files without manual typing.</p></div>
+        <div class="card"><h3>✍️ Handwriting Support</h3><p>Use Pro features for better handwriting and document formatting.</p></div>
+        <div class="card"><h3>📎 PDF Export</h3><p>Save or share scanned results as Word or PDF files quickly.</p></div>
       </div>
     </section>
 
     <section class="section">
       <h2>How to claim your free Pro month</h2>
       <div class="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <div>
-            <strong>Install e-ScanToWord</strong><br />
-            Download the app from Google Play using the Install Now button above.
-          </div>
-        </div>
-        <div class="step">
-          <div class="num">2</div>
-          <div>
-            <strong>Copy one promo code below</strong><br />
-            Codes are first come, first served. If one code is used, try another.
-          </div>
-        </div>
-        <div class="step">
-          <div class="num">3</div>
-          <div>
-            <strong>Redeem in Google Play</strong><br />
-            Open <a href="https://play.google.com/redeem" target="_blank" rel="noopener">play.google.com/redeem</a>, paste your code, and activate Pro.
-          </div>
-        </div>
+        <div class="step"><div class="num">1</div><div><strong>Install e-ScanToWord</strong><br />Use the Install / Open App button above.</div></div>
+        <div class="step"><div class="num">2</div><div><strong>Click “Claim Code”</strong><br />The code will be copied automatically.</div></div>
+        <div class="step"><div class="num">3</div><div><strong>Redeem in Google Play</strong><br />Open <a href="https://play.google.com/redeem" target="_blank" rel="noopener">play.google.com/redeem</a>, paste your code, and activate Pro.</div></div>
       </div>
     </section>
 
     <section class="section">
-      <h2>Available promo codes</h2>
-      <p>Codes are first come, first served. If one code is used, try another.</p>
-
-      <div class="codes">
-
-  <div class="code-card" data-code="78SEPH50RQ7P8Y5S1F98CXS">
-    <div class="code-label">Promo Code</div>
-    <div class="code">78SEPH50RQ7P8Y5S1F98CXS</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="P78L111DKQ1ZSPCX2WPR7XR">
-    <div class="code-label">Promo Code</div>
-    <div class="code">P78L111DKQ1ZSPCX2WPR7XR</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="L0L3QJK41SAKVRW7RVB2WCT">
-    <div class="code-label">Promo Code</div>
-    <div class="code">L0L3QJK41SAKVRW7RVB2WCT</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="17SPG2A015B7ZD7V3VDMWDP">
-    <div class="code-label">Promo Code</div>
-    <div class="code">17SPG2A015B7ZD7V3VDMWDP</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="K7ENZ4JK6ACZXNWK1G5CBGT">
-    <div class="code-label">Promo Code</div>
-    <div class="code">K7ENZ4JK6ACZXNWK1G5CBGT</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="VLTPKKVZPH2YGK235JAZTK7">
-    <div class="code-label">Promo Code</div>
-    <div class="code">VLTPKKVZPH2YGK235JAZTK7</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="1H06YTGV89SC3J1DT4Q149L">
-    <div class="code-label">Promo Code</div>
-    <div class="code">1H06YTGV89SC3J1DT4Q149L</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="JGGWEL64HVGPX5APQK4G2GK">
-    <div class="code-label">Promo Code</div>
-    <div class="code">JGGWEL64HVGPX5APQK4G2GK</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="MY0E1LUSKN47YQ6AHZJCKP9">
-    <div class="code-label">Promo Code</div>
-    <div class="code">MY0E1LUSKN47YQ6AHZJCKP9</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-  <div class="code-card" data-code="JU28WEM7JFY3ZLPN8JJKXHT">
-    <div class="code-label">Promo Code</div>
-    <div class="code">JU28WEM7JFY3ZLPN8JJKXHT</div>
-    <button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button>
-  </div>
-
-</div>
-
-      <div class="note">
-        ⚠️ Promo codes are limited. If a code does not work, it may already have been used. New codes may be added later.
+      <h2>Claim a promo code</h2>
+      <p>Codes are first come, first served. If one code is already used, try another.</p>
+      <div class="codes" id="codes">
+        <!-- Replace these sample codes with your real Google Play promo codes -->
+        <div class="code-card" data-code="PASTE-CODE-001"><div class="code-label">Promo Code</div><div class="code">PASTE-CODE-001</div><button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button></div>
+        <div class="code-card" data-code="PASTE-CODE-002"><div class="code-label">Promo Code</div><div class="code">PASTE-CODE-002</div><button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button></div>
+        <div class="code-card" data-code="PASTE-CODE-003"><div class="code-label">Promo Code</div><div class="code">PASTE-CODE-003</div><button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button></div>
+        <div class="code-card" data-code="PASTE-CODE-004"><div class="code-label">Promo Code</div><div class="code">PASTE-CODE-004</div><button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button></div>
+        <div class="code-card" data-code="PASTE-CODE-005"><div class="code-label">Promo Code</div><div class="code">PASTE-CODE-005</div><button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button></div>
+        <div class="code-card" data-code="PASTE-CODE-006"><div class="code-label">Promo Code</div><div class="code">PASTE-CODE-006</div><button class="btn btn-copy" onclick="claimCode(this)">Claim Code</button></div>
       </div>
-      <a href="https://play.google.com/store/apps/details?id=com.sanie.escantoword" target="_blank" style="display:inline-block;background:#0b5ed7;color:#fff;padding:14px 20px;border-radius:10px;font-weight:bold;text-decoration:none;margin:10px 0;">📲 Install e-ScanToWord</a>
+      <div class="notice">⚠️ This page marks a code as claimed only on your device. If a code fails in Google Play, it may already have been used by someone else.</div>
     </section>
 
-    <p class="footer">© 2026 e-ScanToWord. Official Google Play promo codes. No payment required for promo redemption.</p>
+    <p class="footer">© 2026 e-ScanToWord. Official Google Play promo codes.</p>
   </main>
+
+  <div id="toast" class="toast">Code copied!</div>
+
+  <script>
+    const CLAIMED_KEY = "escantoword_claimed_codes";
+
+    function getClaimedCodes() {
+      try {
+        return JSON.parse(localStorage.getItem(CLAIMED_KEY) || "[]");
+      } catch (_) {
+        return [];
+      }
+    }
+
+    function saveClaimedCode(code) {
+      const claimed = new Set(getClaimedCodes());
+      claimed.add(code);
+      localStorage.setItem(CLAIMED_KEY, JSON.stringify([...claimed]));
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2200);
+    }
+
+    async function claimCode(button) {
+      const card = button.closest(".code-card");
+      const code = card.dataset.code;
+
+      try {
+        await navigator.clipboard.writeText(code);
+      } catch (_) {
+        const temp = document.createElement("textarea");
+        temp.value = code;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        document.body.removeChild(temp);
+      }
+
+      saveClaimedCode(code);
+      card.classList.add("claimed");
+      button.textContent = "Copied — Redeem Now";
+      button.className = "btn btn-green";
+      showToast("Code copied. Redeem it in Google Play.");
+
+      setTimeout(() => {
+        window.open("https://play.google.com/redeem", "_blank");
+      }, 600);
+    }
+
+    function restoreClaimedState() {
+      const claimed = new Set(getClaimedCodes());
+      document.querySelectorAll(".code-card").forEach(card => {
+        const code = card.dataset.code;
+        if (claimed.has(code)) {
+          card.classList.add("claimed");
+          const btn = card.querySelector("button");
+          btn.textContent = "Claimed on this device";
+          btn.className = "btn btn-used";
+        }
+      });
+    }
+
+    restoreClaimedState();
+  </script>
 </body>
 </html>
